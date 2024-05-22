@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="user-container">
+      <label for="nickname">대화명</label>
+      <input type="text" id="nickname">
+    </div>
+    <div class="display-container">
+      <ul class="chatting-list">
+      </ul>
+    </div>
+    <div class="input-container">
+      <span>
+        <input type="text" class="chatting-input">
+        <button class="send-btn">전송</button>
+      </span>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+
+</html>
+
+<!-- ngrok 사용법 
+node js 포트 돌아가게 하고
+ngrok http 5000 실행하면
+포워딩 주소 공유하면 외부에서 접속가능
+-->
